@@ -1,0 +1,57 @@
+ <head>
+
+
+    <link rel="stylesheet" href="ourmembers.component.css">
+</head>
+
+<body class="contain">
+    <h3> Our Team Members</h3>
+    <div>
+        <button  class="btn btn-primary" type="button" name="button" (click)='getInfoFromService1()'>Abhishek
+            Verma</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived1" class="list-group-info"> {{info}} </li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-primary" type="button" name="button" (click)='getInfoFromService2()'>Rohit Kumar</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived2" class="list-group-info"> {{info}} </li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-primary" type="button" name="button" (click)='getInfoFromService3()'>Ayush
+            Awasthi</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived3" class="list-group-info"> {{info}} </li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-primary" type="button" name="button" (click)='getInfoFromService4()'>Mudit Bajpai</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived4" class="list-group-info"> {{info}} </li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-primary" type="button" name="button" (click)='getInfoFromService5()'>Sudeep
+            Adhikari</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived5" class="list-group-info"> {{info}} </li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-primary" type="button" name="button" (click)='getInfoFromService6()'>Ritika
+            Jaiswal</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived6" class="list-group-info"> {{info}} </li>
+        </ul>
+
+    </div>
+</body>
+
+
