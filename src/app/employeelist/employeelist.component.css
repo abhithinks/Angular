@@ -1,25 +1,20 @@
-.demo-table {
-    width: 100%;
-  }
-  
-  .mat-column-demo-position {
-    width: 32px;
-    border-right: 1px solid currentColor;
-    padding-right: 24px;
+h3{
     text-align: center;
-  }
-  
-  .mat-column-demo-name {
-    padding-left: 16px;
-    font-size: 20px;
-  }
-  
-  .mat-column-demo-weight {
-    font-style: italic;
-  }
-  
-  .mat-column-demo-symbol {
-    width: 32px;
+    color: rgb(0, 0, 0);
+    border:3px solid;
+    border-radius: 10px;
+    border-color: rgb(10, 10, 10);
+    margin-top: 0px;
+    font-size: 30px;
+    padding:10px;
+    text-shadow: 2px 2px 18px black;
+    text-decoration: underline;
+    background-color: rgba(208, 225, 233, 0.1);
+    border-style: outset;
+ }
+ .contain {
+    display:float;
     text-align: center;
-    font-weight: bold;
-  }
+    height: 100%;
+   
+}
