@@ -1,7 +1,6 @@
-
 <div class="row justify-content-center">
   <h1 style="text-align: center;">Contact Us</h1>
-<div class="col-md-6 text-left bg-white rounded shadow py-3">
+  <div class="col-md-6 text-left bg-white rounded shadow py-3">
     <form>
       <div class="form-group">
         <label for="name">Name</label>
@@ -19,7 +18,7 @@
       </div>
       <div class="form-group">
         <label for="date">Select Day when can we call you</label>
-        <input  type="date" class="form-control">
+        <input type="date" class="form-control">
       </div>
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -30,33 +29,72 @@
   </div>
 </div>
 <div style="display: flex; margin: 10px 450px ; ">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.162828014831!2d80.34463001487349!3d26.482701683314758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38bcb8be106b%3A0x810c4a22ec6601e5!2sGreen%20Park%20International%20Stadium!5e0!3m2!1sen!2sin!4v1639931120853!5m2!1sen!2sin" width="400" height="300" style="border:0;  border:3px solid rgb(2, 2, 2);" allowfullscreen="" loading="lazy"></iframe>
-  <br> 
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.162828014831!2d80.34463001487349!3d26.482701683314758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38bcb8be106b%3A0x810c4a22ec6601e5!2sGreen%20Park%20International%20Stadium!5e0!3m2!1sen!2sin!4v1639931120853!5m2!1sen!2sin"
+    width="400" height="300" style="border:0;  border:3px solid rgb(2, 2, 2);" allowfullscreen=""
+    loading="lazy"></iframe>
+  <br>
   <p style="margin:10px 50px;">
-     <strong>Address</strong>
-     <br> GreenPark Civil Lines
-     <br> Kanpur Uttar Pradesh
-   </p>
-   <p style="margin:10px 10px;">
-     <Strong >Phone:</Strong>
-     <br> (+91) 7838633198
-   </p>
+    <strong>Address</strong>
+    <br> GreenPark Civil Lines
+    <br> Kanpur Uttar Pradesh
+  </p>
+  <p style="margin:10px 10px;">
+    <Strong>Phone:</Strong>
+    <br> (+91) 7838633198
+  </p>
 </div>
-<div class="card" >
+<!-- <div class="card">
   <h2 style="text-align: center; margin:20px ;font-size:25px;">List Of Our Users</h2>
-  <div class="card-body "  >
-<ng-container *ngFor="let product of products"  >
-  <div>
+  <div class="card-body ">
+   
+    <ng-container *ngFor="let product of products">
+      User Name : <strong class="text-success">{{ product.name }}</strong> &nbsp;
+      User ID : <strong class="text-primary">{{ product.id }}</strong> &nbsp;
+      User Email : <strong class="text-success">{{ product.email }}</strong> &nbsp;
+      User Phone-Number : <strong class="text-success">{{ product.phone }}</strong> &nbsp;
+      User Website : <strong class="text-success">{{ product.website }}</strong> &nbsp; <br>
+      <br>
+    </ng-container>
   
-  User Name : <strong class="text-success">{{ product.name }}</strong> &nbsp;
-</div>
+  </div>
+</div> -->
+<h2 style="text-align: center; margin:20px ;font-size:25px;">List Of Our Users</h2>
+<table class="table table-striped table-dark">
+  <thead>
+    <tr >
+      
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products"> 
+      <th scope="row">{{ product.id }}</th>
+      <td>{{ product.name }}</td>
+      <td>{{ product.email }}</td>
+      <td>{{ product.phone }}</td>
+      <td>{{ product.website }}</td>
+    </tr>
+  
+  </tbody>
+</table>
 
-User ID : <strong class="text-primary">{{ product.id }}</strong> &nbsp;
-  
-  User Email : <strong class="text-success">{{ product.email }}</strong> &nbsp;
-  User Phone-Number : <strong class="text-success">{{ product.phone }}</strong> &nbsp;
-  User Website : <strong class="text-success">{{ product.website }}</strong> &nbsp; <br>
-<br>
-</ng-container>
-</div>
+<div class="d-flex justify-content-center">
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="/onlineStore">Previous</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/home">1</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagination">2</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/gallery">3</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/onlineStore">4</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/contactUs">5</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/joinUs">6</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/employeeList">7</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/joinUs">Next</a></li>
+    </ul>
+  </nav>
 </div>
