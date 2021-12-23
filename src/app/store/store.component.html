@@ -1,3 +1,5 @@
+
+
 <div class="page-area">
     <div class="text-center">
         <h2>Buy Products</h2>
@@ -6,8 +8,9 @@
     <div class="alert alert-info border d-flex" style="display:flex;" *ngIf="addedProduct">
        
         <h2><strong class="text-primary">{{addedProduct}}</strong> is Selected and Added in Cart</h2>
+        <h2>current count is {{count}} </h2>
         <div style=" margin: 0px 50px">
-       <button class="btn btn-success" >Checkout</button>
+       <button class="btn btn-success" (click) = "increment()" >Checkout</button>
     </div>
     </div>
 
@@ -20,7 +23,7 @@
             <div class="card-body">
               <h2 class="card-title">Camera</h2>
               
-              <button class="btn btn-success" (click)="onSelectProduct('Camera')">Select Product</button>
+              <button class="btn btn-success" (click) = "increment()" (click)="onSelectProduct('Camera')">Select Product</button>
             </div>
           </div> 
           <div class="card" style="width: 18rem;">
@@ -53,3 +56,19 @@
     
    </div>
 </div>
+
+<div class="d-flex justify-content-center" >
+  <nav aria-label="Page navigation example ">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" routerLink="/gallery" >Previous</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/home">1</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/pagination">2</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/gallery">3</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/onlineStore">4</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/contactUs">5</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/joinUs">6</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/employeeList">7</a></li>
+        <li class="page-item"><a class="page-link"  routerLink="/contactUs">Next</a></li>
+      </ul>
+  </nav>
+  </div>
